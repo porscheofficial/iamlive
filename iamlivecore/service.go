@@ -223,7 +223,7 @@ func RunWithArgs(provider string, setIni bool, profile string, failsOnly bool, o
 		setTerminalRefresh()
 	}
 
-	if *providerFlag == "aws" {
+	if *providerFlag == "aws" || *providerFlag == "azure" {
 		setINIConfigAndFileFlush()
 	}
 
